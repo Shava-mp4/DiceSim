@@ -1,0 +1,70 @@
+html {
+  background-color: purple;
+}
+
+body {
+  background-color: #6260d2;
+  text-align: center;
+  padding: 25px;
+  width: 500px;
+  border-radius: 5px;
+  margin: 20px auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#DRO {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  padding: 10px;
+  text-align: center;
+}
+
+div {
+  border: 3px solid purple;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+}
+
+button {
+  background-color: purple;
+  color: white;
+  padding: 15px;
+  border: 2px solid purple;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100px;
+  font-size: large;
+  margin: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: purple;
+  transition: 0.2s;
+}
+
+#dice {
+  background-color: black;
+}
+
+#result-image1 {
+  width: 150px;
+  transform: rotate(0);
+}
+
+#result-image2 {
+  width: 150px;
+  transform: rotate(0);
+}
+
+hr {
+  width: 400px;
+}
+
+span {
+  border: 2px solid black;
+  margin: 5px;
+  display: inline-block;
+}
