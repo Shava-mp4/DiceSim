@@ -32,5 +32,34 @@
       <h3>Dice Rolls</h3>
       <p id="rollNum"></p>
     </div>
+
+    <hr />
+    <h3>Mini Game</h3>
+    <p>Roll the die and try to get a higher number than the computer.</p>
+
+    <p>Choose how many dice you want to use:</p>
+
+    <select name="DNum" id="DAmnt">
+      <option value="oneD">One Dice</option>
+      <option value="twoD">Two Die</option>
+      <option value="threeD">Three Die</option>
+    </select>
+
+    <p><button id="playbtn">Play</button></p>
+
+    <div id="computer-dis">
+      <h3>Computer Roll:</h3>
+      <p class="mini-game-dis" id="computer"></p>
+      <p id="comp-imgs">
+        <img id="computer-img" src="images/0.png" alt="compsImg" />
+      </p>
+    </div>
+    <div id="user-dis">
+      <h3>Your Roll:</h3>
+      <p class="mini-game-dis" id="user"></p>
+      <p id="user-imgs">
+        <img id="user-img" src="images/0.png" alt="usersImg" />
+      </p>
+    </div>
   </body>
 </html>
