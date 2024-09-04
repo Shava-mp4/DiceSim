@@ -51,12 +51,28 @@ button:hover {
 
 #result-image1 {
   width: 150px;
+  margin: 15px;
   transform: rotate(0);
+}
+
+#computer-dis {
+  width: 200px;
+  margin: 25px auto;
+}
+
+#user-dis {
+  width: 200px;
+  margin: 25px auto;
 }
 
 #result-image2 {
   width: 150px;
+  margin: 15px;
   transform: rotate(0);
+}
+
+img {
+  width: 100px;
 }
 
 hr {
@@ -68,3 +84,4 @@ span {
   margin: 5px;
   display: inline-block;
 }
+
