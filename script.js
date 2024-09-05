@@ -30,10 +30,11 @@ let numRolled = 0;
 let numOfDice = document.getElementById("DAmnt");
 let compRoll = document.getElementById("computer");
 let userRoll = document.getElementById("user");
+
 let compImg = document.getElementById("computer-img");
 let userImg = document.getElementById("user-img");
-let compImgs = document.getElementById("comp-imgs");
-let userImgs = document.getElementById("user-imgs");
+
+
 let userRolls = 0;
 
 document.getElementById("rollbtn").addEventListener("click", diceRoll);
@@ -133,7 +134,7 @@ function play() {
     console.log(compNum);
     console.log(userNum);
 
-    if (compNum > userNum) {
+    if (compNum >= userNum) {
       userRolls++;
       alert("You Lost :(");
     } else if (userNum > compNum) {
@@ -155,16 +156,17 @@ function play() {
     //Display Images
     compImg.src = `images/${compNum}.png`;
     userImg.src = `images/${userNum}.png`;
-    compImgs.innerHTML += `<img src="images/${compNum2}>`;
-    userImgs.innerHTML += `<img src="images/${userNum2}>`;
+   
 
     //Display Numbers
-    compRoll.innerHTML = `The Computer Rolled ${compNumTotal}`;
-    userRoll.innerHTML = `You Rolled ${userNumTotal}`;
+    compRoll.innerHTML = `The Computer Rolled a Total of ${compNumTotal}`;
+    document.getElementById("comp-roll-amnts").innerHTML = `Rolled: ${compNum}, ${compNum2}`;
+    userRoll.innerHTML = `You Rolled Rolled a Total of ${userNumTotal}`;
+    document.getElementById("user-roll-amnts").innerHTML = `Rolled: ${userNum}, ${userNum2}`;
     console.log(compNumTotal);
     console.log(userNumTotal);
 
-    if (compNumTotal > userNumTotal) {
+    if (compNumTotal >= userNumTotal) {
       userRolls++;
       alert("You Lost :(");
     } else if (userNumTotal > compNumTotal) {
@@ -188,18 +190,16 @@ function play() {
     //Display Images
     compImg.src = `images/${compNum}.png`;
     userImg.src = `images/${userNum}.png`;
-    compImgs.innerHTML +=
-      `<img src="images/${compNum2}>` + `<img src="images/${compNum3}>`;
-    userImgs.innerHTML +=
-      `<img src="images/${userNum2}>` + `<img src="images/${userNum3}>`;
 
     //Display Numbers
-    compRoll.innerHTML = `The Computer Rolled ${compNumTotal}`;
-    userRoll.innerHTML = `You Rolled ${userNumTotal}`;
+    compRoll.innerHTML = `The Computer Rolled a Total of ${compNumTotal}`;
+    document.getElementById("comp-roll-amnts").innerHTML = `Rolled: ${compNum}, ${compNum2}, ${compNum3}`;
+    userRoll.innerHTML = `You Rolled a Total of ${userNumTotal}`;
+    document.getElementById("user-roll-amnts").innerHTML = `Rolled: ${userNum}, ${userNum2}, ${userNum3}`;
     console.log(compNumTotal);
     console.log(userNumTotal);
 
-    if (compNumTotal > userNumTotal) {
+    if (compNumTotal >= userNumTotal) {
       userRolls++;
       alert("You Lost :(");
     } else if (userNumTotal > compNumTotal) {
@@ -214,4 +214,10 @@ function play() {
 
 function reset() {
   document.getElementById("rollNum").innerHTML = "";
+  document.getElementById("comp-roll-amnts").innerHTML = "";
+  compRoll.innerHTML = "";
+  compImg.src = "images/0.png";
+  document.getElementById("user-roll-amnts").innerHTML = "";
+  userRoll.innerHTML = "";
+  userImg.src = "images/0.png";
 }
