@@ -11,7 +11,7 @@
     <h1>Dice Simulator</h1>
     <hr />
     <h3>Choose a simulation option</h3>
-    <select name="DROp" id="DRO">
+    <select name="DROp" id="DRO" title="dice-roll-option">
       <option value="DR1">Roll Dice Once</option>
       <option value="DR5">Roll Dice 5 Times</option>
       <option value="DRX">Roll Dice X Times</option>
@@ -39,7 +39,7 @@
 
     <p>Choose how many dice you want to use:</p>
 
-    <select name="DNum" id="DAmnt">
+    <select name="DNum" id="DAmnt" title="number-of-dice">
       <option value="oneD">One Dice</option>
       <option value="twoD">Two Die</option>
       <option value="threeD">Three Die</option>
@@ -53,6 +53,7 @@
       <p id="comp-imgs">
         <img id="computer-img" src="images/0.png" alt="compsImg" />
       </p>
+      <p id="comp-roll-amnts"></p>
     </div>
     <div id="user-dis">
       <h3>Your Roll:</h3>
@@ -60,6 +61,7 @@
       <p id="user-imgs">
         <img id="user-img" src="images/0.png" alt="usersImg" />
       </p>
+      <p id="user-roll-amnts"></p>
     </div>
   </body>
 </html>
